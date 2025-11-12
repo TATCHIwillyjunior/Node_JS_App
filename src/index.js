@@ -9,8 +9,8 @@ const userOne = {
 userOne.age = 30
 console.log(userOne);
 
-const sports = ["tennis", "golf", "volleyball"]
-console.log(sports);
+const sport = ["tennis", "golf", "volleyball"]
+console.log(sport);
 
 
 // ES Modules 
