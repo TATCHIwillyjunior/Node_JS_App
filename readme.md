@@ -1,7 +1,3 @@
-Here’s a polished, more professional version of your README that improves clarity, structure, and presentation while keeping all the rich details of your project. I’ve reorganized sections, tightened the language, and added developer-friendly touches:
-
----
-
 # 📚 User & Book Management Application
 
 A full-stack **Node.js** web application for managing users and books with a **SQLite database**, built using **Express.js** for the backend and **vanilla JavaScript** for the frontend.  
