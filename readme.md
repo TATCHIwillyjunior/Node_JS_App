@@ -72,8 +72,8 @@ Edit `.env`:
 PORT=3000
 NODE_ENV=development
 DATABASE_URL=./database.sqlite
-API_KEY=my-super-secret-api-key-change-this-in-production
-JWT_SECRET=your-jwt-secret-key-min-32-characters-long
+API_KEY=Your_Choicen_Key
+JWT_SECRET=Your_Choicen_secret_key
 JWT_EXPIRES_IN=24h
 ```
 
@@ -99,7 +99,8 @@ npx http-server public -c-1 -p 8080
 # Option B: Live reload
 npx live-server public --port=8080
 ```
-![Uploading image.png…]()
+<img width="1374" height="866" alt="image" src="https://github.com/user-attachments/assets/8a4eee6f-f24a-42b7-a1f8-a08728a088fa" />
+
 
 
 ### 6. Open Application
