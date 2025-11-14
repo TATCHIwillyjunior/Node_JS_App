@@ -76,3 +76,4 @@ app.listen(config.port, () => {
 })
 
 export default app
+// Export app for testing purposes
