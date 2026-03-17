@@ -1,8 +1,9 @@
 name: Renovate
 
 on:
-  schedule:
-    - cron: "0 * * * *"
+  schedule:             # Run on a schedule of 3am and 6pm every Sunday
+    - cron: "0 3 * * 0"  
+    - cron: "0 18 * * 0"  
   workflow_dispatch:
 
 jobs:
@@ -19,5 +20,6 @@ jobs:
 
 
             # Optionally, you can specify additional configuration options here
-            # For example, to specify a custom config file:
-            # config-file: .github/renovate.json
+            # For example, to specify a custom config file to tell renovate where to find the file(s) 
+            # instead of using the default one as the example below but since mine is at the root no need of the config-file option
+            # config-file: .github/renovate.json  
