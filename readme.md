@@ -140,6 +140,45 @@ Node Js App/
 ```
 
 ---
+## 🛠️ Continuous Integration & Automated Dependency Updates
+
+### ⚙️ GitHub Actions — CI Pipeline
+This project now includes a CI workflow (.github/workflows/ci.yml) that automatically runs on:
+
+- Pushes to main
+- All Pull Requests
+
+The pipeline performs:
+
+- Install dependencies
+- Build (if a build script exists)
+
+This ensures every changes  including Renovate updates is validated before merging
+
+### ⚙️ 🤖 Renovate — Automated Dependency Updates
+
+Renovate is configured using the renovate.json file at the root of the project.
+
+# Key settings:
+
+- Timezone: Europe/Paris
+- Schedule:
+ -   Every Sunday at 03:00
+ -   Every Sunday at 18:00
+- No automerge (CI must pass first)
+- Uses config:base for standard Renovate rules
+
+A dedicated workflow (.github/workflows/renovate.yml) runs Renovate on a schedule and can also be triggered manually.
+
+Renovate automatically creates Pull Requests to update:
+
+- npm dependencies
+- devDependencies
+- minor/patch updates
+- major updates (separate PRs)
+
+Each PR triggers the CI pipeline to ensure updates are safe.
+---
 
 ## 🔌 API Documentation
 
